@@ -1,4 +1,7 @@
 'use strict';
-exports.DATABASE_URL = process.env.DATABASE_URL || 'mongodb://localhost/restaurants-app';
-exports.TEST_DATABASE_URL = process.env.TEST_DATABASE_URL || 'mongodb://localhost/test-restaurants-app';
-exports.PORT = process.env.PORT || 8080;
+
+module.exports = {
+  PORT: process.env.PORT || 8080,
+  MONGODB_URI: process.env.MONGODB_URI || 'mongodb://localhost:27017/noteful',
+  TEST_MONGODB_URI: process.env.TEST_MONGODB_URI || 'mongodb://localhost:27017/noteful-test'
+};
