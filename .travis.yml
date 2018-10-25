@@ -1,0 +1,11 @@
+language: node_js
+node_js: node
+services:
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: C1c5OGEakgVz1+s8p7LT5B6Zw/MRtOUTWUgEESYWt7ODr/weeQvzKtdGa5eCcS8I67204al1oDazjxYDwG4PnB1tWh5xucfL7+bpuTPBLT2atoyPoSa0RplredGAF2FPKwrazmNOc0SsD//9jphGqOzIO4B+zVtQgCUcvVfkL91TD3tYoDPRycZZJnO9Gw21x+QL2vQpMV3ZiZJ7m0l7RMkuF1xyQ7O1lOzH+toIxJI2KHgHmFeG2wAY57EQZAcGM2d/kH8ynGG9NGYRGk4IfvjU0T5AZRZR6PTX6GxLLxW1LZNmU2j/wjAniL3oPAtS5MgE7p0JH/Puconjz4pDgJW4a4YuSNUzL1/EzKretBkbOQGJRXWZ23SUN0HXrnW+M56G1gUVieiXAe7ueBJ5I1X5T9pvyGm1oUkvO8jwsZ9/DBqa9n/4q6j1ZE1ExEw0OCFwgCrIeeARvqKcgFrNBLmpJo612HGW6SvRyxNjirXcmtZizUpB3C/VtMB3zPXY5OVSTM+2jn/WhP5+GsBbSRsZ+N0FnGN153q7qUyyvIQxPaow85Ugw01jDkJJHwi9UGLAoTL1iz2H5NDDHguXvzBhLU6wbj8FmgSVk3jvARKALexQ5b649lQeHthu4pBiT7Ob1afrfp9ptoe2O/W+F36yTTUdidYY7NS1I2hRZtw=
+  app: travis-restaurants
+  on:
+    branch: feature/with-tests
